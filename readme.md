@@ -5,26 +5,10 @@
 Imagine that you are flight control tower :)
 So here are the steps for this:
 
-#### Hardware
+[Haardware Prerequisites](https://github.com/lz2hpc/iot-pi-flights/blob/master/hardware.md)
 
-- RTL-SDR receiver [(Receivers comparison)](http://www.radioforeveryone.com/p/group-ads-b-test-19-dongles.html)
-- some small PI
-- antenna for 1090Mhz
-- 50 Ohm coax cable
-- several SMA, Type N  connectors, depends on antenna's connector
-- optional filter for 1090MHz
+[Schema](https://github.com/lz2hpc/iot-pi-flights/blob/master/schema.md)
 
-#### Schema
+[OS Image](https://github.com/lz2hpc/iot-pi-flights/blob/master/image.md)
 
---- Antenna --> Filter > PI > PI_HOST | FEED_HOST 
-
-#### OS Image
-
-Get Raspbian image:
-http://vx2-downloads.raspberrypi.org/raspbian_full/images/raspbian_full-2018-11-15/2018-11-13-raspbian-stretch-full.zip
-
-Burn to microSD with Etcher
-
-In running Raspbian run the SSH to be able to operate remotely:
-
-``$ sudo raspi-config   /Interfaces/SSH Enable``
+[Flight Tracking Software](https://github.com/lz2hpc/iot-pi-flights/blob/master/tracking.md)
