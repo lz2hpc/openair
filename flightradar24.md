@@ -27,3 +27,6 @@ Install and configure feeder via next script:
 
 ``$ sudo service fr24feed restart``
 
+#### Logs
+
+``$ tail -f /var/log/fr24feed/fr24feed.log``
