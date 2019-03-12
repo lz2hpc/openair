@@ -93,8 +93,9 @@ Result:
    
 #### Statistics
 
-- pi_host:8080
-- My ADS-B https://flightaware.com/adsb/stats/user/UserSurname
+- My Pi Host: http://localhost:8080
+
+- My FlightAware ADS-B: https://flightaware.com/adsb/stats/user/UserSurname
 
 #### Start / Stop
 
@@ -123,7 +124,11 @@ Install and configure feeder via next script:
         You don't seem to have any dump1090 installed. On the fr24feed start it will automatically install dump1090-mutability.
         Created symlink /etc/systemd/system/multi-user.target.wants/fr24feed.service → /etc/systemd/system/fr24feed.service.
 
+#### Statistics
 
+- Pi Host: http://localhost:8754
+
+- My Data Sgharing: https://www.flightradar24.com/account/feed-stats/?id=19030
 
 #### Start / Stop
 
