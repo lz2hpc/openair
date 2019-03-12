@@ -1,3 +1,20 @@
 #### Schema
 
---- Antenna --> Filter --> PI with decoder(s) and feed client(s) --> PI_HOST | FEED_HOST(s)
+         Antenna 
+        
+          \ | /
+           \ /
+            |
+            |
+           
+      Filter 1090 Mhz
+         
+            |
+            |
+           
+PI + decoder(s) and client(s)
+
+            |
+            |
+           
+   PI_HOST & FEED_HOST(s)
