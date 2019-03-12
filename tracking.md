@@ -1,5 +1,7 @@
 #### Flight Tracking Software
 
+#### dump1090
+
 ``$ sudo apt-get install libusb-1.0-0-dev librtlsdr-dev rtl-sdr``
 
 Get and build dump1090 (Dump 1090 is a Mode S decoder specifically designed for RTLSDR devices.)
@@ -17,6 +19,8 @@ Run dump1090
 ``$ cd ~pi/dump1090; ./dump1090 --net --net-http-port 80 --interactive &``
 
 Go to pi_host:80 and enjoy the planes around :)
+
+#### FlightAware
 
 Download and install PiAware:
 
@@ -103,3 +107,30 @@ Result:
 #### Logs
 
 ``$ tail -f /var/log/piaware.log``
+
+#### FlightRadar24
+
+#### Install FlightRadar24 
+
+Install and configure feeder via next script:
+
+``sudo bash -c "$(wget -O - https://repo-feed.flightradar24.com/install_fr24_rpi.sh)"``
+
+    ...
+        Preparing to unpack .../fr24feed_1.0.23-8_armhf.deb ...
+        Unpacking fr24feed (1.0.23-8) ...
+        Setting up fr24feed (1.0.23-8) ...
+        You don't seem to have any dump1090 installed. On the fr24feed start it will automatically install dump1090-mutability.
+        Created symlink /etc/systemd/system/multi-user.target.wants/fr24feed.service → /etc/systemd/system/fr24feed.service.
+
+
+
+#### Start / Stop
+
+``$ sudo service fr24feed start``
+
+``$ sudo service fr24feed restart``
+
+``$ sudo service fr24feed restart``
+
+
