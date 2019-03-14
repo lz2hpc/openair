@@ -2,7 +2,7 @@
 
 [dump1090](https://github.com/lz2hpc/iot-pi-flights/blob/master/dump1090.md)
 
-[piaware](https://github.com/lz2hpc/iot-pi-flights/blob/master/flightaware.md)
+[flightaware](https://github.com/lz2hpc/iot-pi-flights/blob/master/flightaware.md)
 
 [fr24feed](https://github.com/lz2hpc/iot-pi-flights/blob/master/flightradar24.md)
 
