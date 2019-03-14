@@ -1,4 +1,4 @@
-#### FlightAware
+### FlightAware
 
 Download and install PiAware:
 
