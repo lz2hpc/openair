@@ -1,4 +1,4 @@
-#### PlaneFinder
+### PlaneFinder
 
 Download and install the client:
 
