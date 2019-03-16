@@ -1,4 +1,4 @@
-#### OS Image
+### OS Image
 
 Get Raspbian image:
 http://vx2-downloads.raspberrypi.org/raspbian_full/images/raspbian_full-2018-11-15/2018-11-13-raspbian-stretch-full.zip
