@@ -1,4 +1,4 @@
-#### Hardware
+### Hardware
 
 - RTL-SDR receiver [(Receivers comparison)](http://www.radioforeveryone.com/p/group-ads-b-test-19-dongles.html)
 - some small PI
