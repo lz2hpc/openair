@@ -1,4 +1,4 @@
-# Open VPN Settings
+### Open VPN Settings
 
 #### Server
 
