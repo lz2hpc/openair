@@ -10,6 +10,8 @@ If there is no dump1090:
 
 #### Status
 
+``$ ps -fae | grep rbfeeder``
+
 #### Claim yourself
 
 Get the key:
