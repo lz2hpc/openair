@@ -27,7 +27,7 @@ Insert the key: https://www.radarbox24.com/raspberry-pi/claim
 #### Statistics
 
 [https://www.radarbox24.com/stations/raspberry-pi](https://www.radarbox24.com/stations/raspberry-pi)
-[https://www.radarbox24.com/stations/EXTRPI001297](https://www.radarbox24.com/stations/EXTRPI001297)
+[https://www.radarbox24.com/stations](https://www.radarbox24.com/stations)
 
 #### Start / Stop
 
