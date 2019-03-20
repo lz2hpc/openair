@@ -1,4 +1,4 @@
-# iot-pi-flights
+# openair
 
 #### Legend
 
