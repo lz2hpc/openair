@@ -21,15 +21,7 @@ Check used ports:
 
 ``$ sudo apt install net-tools``
 
-``$ sudo netstat -ltnp``
-
-Where: 
-    l: display only listening sockets
-    t: display tcp connection
-    n: display addresses in a numerical form
-    p: display process ID/ Program name
-    
-One can use specific commands:
+``$ sudo netstat -tulpn | grep LISTEN``
 
 ``$ piaware-status``
 
@@ -45,6 +37,14 @@ One can use specific commands:
         dump1090 is producing data on localhost:30005.
 
         Your feeder ID is zzzzz-zzzzz-zzzzz-zzzzz (from /var/cache/piaware/feeder_id)
+        
+#### Start / Stop
+
+``$ sudo systemctl start piaware`` (runing as service by default)
+
+``$ sudo systemctl stop piaware``
+
+``$ sudo systemctl restart piaware``
         
 #### Claim yourself
 
