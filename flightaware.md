@@ -40,11 +40,11 @@ Check used ports:
         
 #### Start / Stop
 
-``$ sudo systemctl start piaware`` (runing as service by default)
+``$ sudo systemctl start dump1090-fa``
 
-``$ sudo systemctl stop piaware``
+``$ sudo systemctl stop dump1090-fa``
 
-``$ sudo systemctl restart piaware``
+``$ sudo systemctl restart dump1090-fa``
         
 #### Claim yourself
 
