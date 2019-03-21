@@ -8,7 +8,7 @@
 
 #### Client
 
-``$ sudo apt-get install openvpn``
+``$ sudo apt-get install openvpn -y``
 
 ``$ openvpn –version``
 
