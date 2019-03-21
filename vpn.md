@@ -10,11 +10,13 @@
 
 ``$ sudo apt-get install openvpn -y``
 
-``$ openvpn –version``
+``$ openvpn –-version``
 
-From server:
+From the Public server get the ``client.ovpn`` file and 
 
-``$ sudo cp client.ovpn /etc/openvpn/client.ovpn``
+put it on the clien's location ``/etc/openvpn/client.ovpn``.
+
+Initialize the client with the config file.
 
 ``$ openvpn –config client.ovpn``
 
