@@ -32,23 +32,23 @@ Get dump1090-mutability:
 
 ``$ sudo mkdir install-dump``
 
-``$ cd install-dump``
+``$ cd dump1090-mutability``
 
 ``$ sudo git clone https://github.com/mutability/dump1090.git``
 
 Build it:
 
-``$ cd ~/install-dump/dump1090``
+``$ cd ~/dump1090-mutability/dump1090``
 
 ``$ sudo dpkg-buildpackage -b``
 
 Install dump1090-mutability:
 
-``$ cd ~/install-dump``
+``$ cd ~/dump1090-mutability``
 
 ``$ sudo dpkg -i dump1090-mutability_1.15~dev_*.deb``
 
-``$ cd ~/install-dump``
+``$ cd ~/dump1090-mutability``
 
 ``$ sudo dpkg -i dump1090-mutability_1.15~dev_*.deb``
 
