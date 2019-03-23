@@ -59,4 +59,4 @@ Insert the key: https://www.radarbox24.com/raspberry-pi/claim
 
 #### Links
 
-[https://github.com/lz2hpc/openair/edit/master/radarbox24.md](https://github.com/lz2hpc/openair/edit/master/radarbox24.md)
+[https://www.radarbox24.com/raspberry-pi/guide](https://www.radarbox24.com/raspberry-pi/guide)
