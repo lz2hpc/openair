@@ -67,3 +67,8 @@ Configure:
 #### Check
 
 http://localhost:80/dump1090/gmap.html
+
+
+#### Resources
+
+[https://forum.planefinder.net/threads/how-to-install-dump1090-mutability_1-15-dev-on-rpi.889/](https://forum.planefinder.net/threads/how-to-install-dump1090-mutability_1-15-dev-on-rpi.889/)
