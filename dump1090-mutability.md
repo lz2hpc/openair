@@ -30,7 +30,7 @@ Get dump1090-mutability:
 
 ``$ cd ~/``
 
-``$ sudo mkdir install-dump``
+``$ sudo mkdir dump1090-mutability``
 
 ``$ cd dump1090-mutability``
 
