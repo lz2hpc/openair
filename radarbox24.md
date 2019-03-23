@@ -4,7 +4,23 @@ Install and configure feeder via next script:
 
 ``sudo bash -c "$(wget -O - http://apt.rb24.com/inst_rbfeeder.sh)"``
 
-If there is no dump1090:
+Check the config file
+
+``sudo nano /etc/rbfeeder.ini``
+
+Run the client
+
+``sudo rbfeeder --set-network-mode on --set-network-host ‹host› --set-network-port ‹port› --set-network-protocol ‹beast/raw› --no-start``
+
+In case we already have a key
+
+
+``sudo rbfeeder --showkey``   on the machine with the key
+
+``sudo rbfeeder --setkey ‹your sharing key›``   on the fresh instance
+
+
+If there is no decoding software (dump1090):
 
 ``$ sudo rbfeeder --set-network-mode off --no-start``
 
@@ -43,4 +59,4 @@ Insert the key: https://www.radarbox24.com/raspberry-pi/claim
 
 #### Links
 
-[sudo rbfeeder --set-network-mode off --no-start](sudo rbfeeder --set-network-mode off --no-start)
+[https://github.com/lz2hpc/openair/edit/master/radarbox24.md](https://github.com/lz2hpc/openair/edit/master/radarbox24.md)
