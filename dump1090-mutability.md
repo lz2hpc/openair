@@ -68,6 +68,16 @@ Configure:
 
 http://localhost:80/dump1090/gmap.html
 
+#### Problems
+
+    Problem fetching data from dump1090.
+    AJAX call failed (error: Not Found). Maybe dump1090 is no longer running?
+    The displayed map data will be out of date.
+    
+    sudo wget -O  /etc/udev/rules.d/rtl-sdr.rules "https://raw.githubusercontent.com/osmocom/rtl-sdr/master/rtl-sdr.rules"
+
+    sudo reboot
+
 
 #### Resources
 
