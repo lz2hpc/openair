@@ -18,7 +18,7 @@ put it on the clien's location ``/etc/openvpn/client.ovpn``.
 
 Initialize the client with the config file.
 
-``$ openvpn –config client.ovpn``
+``$ openvpn ./client.ovpn``
 
 #### Start / Stop
 
