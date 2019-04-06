@@ -28,7 +28,13 @@ Initialize the client with the config file.
 
 ``$ sudo systemctl restart openvpn@server``
 
-#### Routing
+#### Boot
+
+``mv /etc/openvpn/client.ovpn /etc/openvpn/client.conf``
+
+Add ``AUTOSTART="all"`` to ``/etc/default/openvpn``
+
+
 
 #### Resources
 
