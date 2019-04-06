@@ -30,14 +30,18 @@ Initialize the client with the config file.
 
 #### Boot
 
-``mv /etc/openvpn/client.ovpn /etc/openvpn/client.conf``
+``$ mv /etc/openvpn/client.ovpn /etc/openvpn/client.conf``
 
 Add ``AUTOSTART="all"`` to ``/etc/default/openvpn``
+
+``$ sudo systemctl daemon-reload``
+
+``sudo service openvpn restart``
 
 
 
 #### Resources
 
 [https://www.cyberciti.biz/faq/howto-setup-openvpn-server-on-ubuntu-linux-14-04-or-16-04-lts/](https://www.cyberciti.biz/faq/howto-setup-openvpn-server-on-ubuntu-linux-14-04-or-16-04-lts/)
-
+[Guide: Configure OpenVPN to autostart on systemd Linux](https://www.smarthomebeginner.com/configure-openvpn-to-autostart-linux/)
 
