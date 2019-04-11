@@ -29,3 +29,5 @@ services:
 [Setting up a Redis test environment using Docker Compose](https://cheesyprogrammer.com/2018/01/04/setting-up-a-redis-test-environment-using-docker-compose/)
 
 [Redis Persistence](https://redis.io/topics/persistence)
+
+[https://docs.spring.io/spring-data/data-redis/docs/current/reference/html/](https://docs.spring.io/spring-data/data-redis/docs/current/reference/html/)
