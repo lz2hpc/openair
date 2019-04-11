@@ -43,8 +43,7 @@ Add ``AUTOSTART="all"`` to ``/etc/default/openvpn``
 Auto IP Configuration:
 ```
 #!/bin/bash
-####Adding preconfifured IP Addresses from file to nat->PREROUTING and filter->FORWARD chains
-
+#### Adding preconfifured IP Addresses from file to nat-> PREROUTING and filter-> FORWARD chains
 
 input="/root/scripts/ip.conf"
 DIP="89.223.93.85"
