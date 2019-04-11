@@ -59,6 +59,14 @@ done < "$input"
 iptables-save > /root/scripts/fireng.conf
 ```
 
+Firewall Service
+```
+#!/bin/bash
+###### Script for auto loading firewall rules at startup. It is executed by a service called fireng.service at startup.
+
+/sbin/iptables-restore /root/scripts/fireng.conf
+```
+
 #### Resources
 
 [https://www.cyberciti.biz/faq/howto-setup-openvpn-server-on-ubuntu-linux-14-04-or-16-04-lts/](https://www.cyberciti.biz/faq/howto-setup-openvpn-server-on-ubuntu-linux-14-04-or-16-04-lts/)
