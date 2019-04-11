@@ -38,7 +38,27 @@ Add ``AUTOSTART="all"`` to ``/etc/default/openvpn``
 
 ``sudo service openvpn restart``
 
+### VPS Bastioning
 
+Auto IP Configuration:
+```
+#!/bin/bash
+####Adding preconfifured IP Addresses from file to nat->PREROUTING and filter->FORWARD chains
+
+
+input="/root/scripts/ip.conf"
+DIP="89.223.93.85"
+
+while IFS= read -r SIP
+do
+iptables -t nat -C PREROUTING -p tcp -s "$SIP" -d "$DIP" --dport 8080 -j DNAT --to-destination 10.8.0.2:8080 2> /dev/null
+if [ $? -ne 0 ];then
+iptables -t nat -A PREROUTING -p tcp -s "$SIP" -d "$DIP" --dport 8080 -j DNAT --to-destination 10.8.0.2:8080
+iptables -t filter -A FORWARD -p tcp -s "$SIP" -d 10.8.0.2 -j ACCEPT
+fi
+done < "$input"
+iptables-save > /root/scripts/fireng.conf
+```
 
 #### Resources
 
