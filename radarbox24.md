@@ -63,6 +63,8 @@ and
 ``$ tail -f /var/log/rbfeeder.log``
 
 #### Links
+https://www.radarbox24.com/sharing-data
 
 [https://www.radarbox24.com/raspberry-pi/guide](https://www.radarbox24.com/raspberry-pi/guide)
+
 [https://www.radarbox24.com/presenting-the-radarbox-xrange-receiver](https://www.radarbox24.com/presenting-the-radarbox-xrange-receiver)
