@@ -53,6 +53,11 @@ Insert the key: https://www.radarbox24.com/raspberry-pi/claim
 
 ``$ sudo systemctl restart rbfeeder``
 
+#### UI
+[https://www.radarbox24.com/stations/PGANRBNNNNNN](https://www.radarbox24.com/stations/PGANRBNNNNNN)
+and
+[http://anrbNNNNNN](http://anrbNNNNNN)
+
 #### Logs
 
 ``$ tail -f /var/log/rbfeeder.log``
@@ -60,3 +65,4 @@ Insert the key: https://www.radarbox24.com/raspberry-pi/claim
 #### Links
 
 [https://www.radarbox24.com/raspberry-pi/guide](https://www.radarbox24.com/raspberry-pi/guide)
+[https://www.radarbox24.com/presenting-the-radarbox-xrange-receiver](https://www.radarbox24.com/presenting-the-radarbox-xrange-receiver)
