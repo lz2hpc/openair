@@ -30,3 +30,6 @@ Install and configure feeder via next script:
 #### Logs
 
 ``$ tail -f /var/log/fr24feed/fr24feed.log``
+
+#### Resources
+https://flightaware.com/adsb/piaware/build
