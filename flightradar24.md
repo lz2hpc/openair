@@ -32,4 +32,5 @@ Install and configure feeder via next script:
 ``$ tail -f /var/log/fr24feed/fr24feed.log``
 
 #### Resources
-https://flightaware.com/adsb/piaware/build
+https://www.flightradar24.com/build-your-own
+https://repo-feed.flightradar24.com/rpi_images/fr24-raspberry-pi-latest.img.zip
