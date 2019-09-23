@@ -86,3 +86,7 @@ Result:
 #### Logs
 
 ``$ tail -f /var/log/piaware.log``
+
+#### Resourses
+https://flightaware.com/adsb/piaware/build
+http://piaware.flightcdn.com/piaware-sd-card-3.7.2.img.zip
