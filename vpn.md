@@ -6,6 +6,15 @@
 
 ``$ sudo bash openvpn-install.sh``
 
+or use:
+
+``$ sudo su``
+
+``$ apt update``
+
+``$ apt-get install openvpn``
+
+
 #### Client
 
 ``$ sudo apt-get install openvpn -y``
