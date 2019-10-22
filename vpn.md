@@ -6,14 +6,6 @@
 
 ``$ sudo bash openvpn-install.sh``
 
-or use:
-
-``$ sudo su``
-
-``$ apt update``
-
-``$ apt-get install openvpn``
-
 
 #### Client
 
@@ -36,6 +28,8 @@ Initialize the client with the config file.
 ``$ sudo systemctl start openvpn@server``
 
 ``$ sudo systemctl restart openvpn@server``
+
+``$ sudo systemctl status openvpn@server``
 
 #### Boot
 
