@@ -6,6 +6,8 @@
 
 ``$ sudo bash openvpn-install.sh``
 
+Use UDP protocol, as for TCP the OpenVpn doesn't run out of the box.
+
 
 #### Client
 
@@ -13,9 +15,11 @@
 
 ``$ openvpn –-version``
 
-From the Public server get the ``client.ovpn`` file and 
+From the Public server get the ``client.conf / client.ovpn`` file and (i.e.: /root/client.ovpn)
 
 put it on the clien's location ``/etc/openvpn/client.ovpn``.
+
+Copy client's certificate and key too.
 
 Initialize the client with the config file.
 
@@ -76,3 +80,5 @@ Firewall Service
 
 [Guide: Configure OpenVPN to autostart on systemd Linux](https://www.smarthomebeginner.com/configure-openvpn-to-autostart-linux/)
 
+[Guide to install OpenVPN for Ubuntu](https://www.ovpn.com/en/guides/ubuntu-gui)
+[OpenVPN client on Raspberry Pi](http://kernelreloaded.com/openvpn-client-on-raspberry-pi/)
