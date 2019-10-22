@@ -47,6 +47,12 @@ Add ``AUTOSTART="all"`` to ``/etc/default/openvpn``
 
 ### VPS Bastioning
 
+#### OpenVPN Forwarding
+
+
+``iptables -t nat -A PREROUTING -p tcp -i eth0 --dport DESIRED_PORT -j DNAT --to-destination VPN_CONNECTED_CLIENT_IP:APP_PORT``
+``iptables -A FORWARD -p tcp -d 10.8.0.2 --dport APP_PORT -m state --state NEW,ESTABLISHED,RELATED -j ACCEPT``
+
 Auto IP Configuration:
 ```
 #!/bin/bash
