@@ -1,6 +1,6 @@
 ### Wifi Configuration
 
-Default credentials: pi raspberry
+Default credentials: pi / raspberry
 
 ``sudo nano /etc/wpa_supplicant/wpa_supplicant.conf``
 
