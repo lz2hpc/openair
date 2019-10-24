@@ -15,3 +15,7 @@ http://192.168.1.NN/map.html
 #### Start / Stop
 
 #### Logs
+
+#### Resources
+
+https://planefinder.net/sharing/client
