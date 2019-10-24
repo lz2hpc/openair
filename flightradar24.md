@@ -33,7 +33,8 @@ Install and configure feeder via next script:
 
 #### Resources
 
-https://thepihut.com/blogs/raspberry-pi-tutorials/how-to-track-aircraft-with-your-raspberry-pi
-
 https://www.flightradar24.com/build-your-own
+
 https://repo-feed.flightradar24.com/rpi_images/fr24-raspberry-pi-latest.img.zip
+
+https://www.thegeekpub.com/16314/ads-b-using-a-raspberry-pi-flightradar24/
