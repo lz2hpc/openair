@@ -89,4 +89,7 @@ Result:
 
 #### Resourses
 https://flightaware.com/adsb/piaware/build
+
 http://piaware.flightcdn.com/piaware-sd-card-3.7.2.img.zip
+
+https://thepihut.com/blogs/raspberry-pi-tutorials/how-to-track-aircraft-with-your-raspberry-pi
