@@ -34,7 +34,8 @@ Get dump1090-mutability:
 
 ``$ cd dump1090-mutability``
 
-``$ sudo git clone https://github.com/mutability/dump1090.git``
+``$ sudo git clone https://github.com/mutability/dump1090.git`` or get from 
+http://http.us.debian.org/debian/pool/main/d/dump1090-mutability/dump1090-mutability_1.15~20180310.4a16df3+dfsg-6_armhf.deb
 
 Build it:
 
