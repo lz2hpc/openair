@@ -13,3 +13,9 @@
 ``ps -fae | grep ssh``
 
 ``netstat -tulpn | grep 22``
+
+``ssh localhost``
+
+``systemctl is-enabled ssh``
+
+``systemctl status ssh``
