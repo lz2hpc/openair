@@ -35,6 +35,8 @@ Install and configure feeder via next script:
 
 https://www.flightradar24.com/build-your-own
 
+https://forum.flightradar24.com/threads/10232-How-to-Install-dump1090-mutability_1-15-dev-on-RPi
+
 https://repo-feed.flightradar24.com/rpi_images/fr24-raspberry-pi-latest.img.zip
 
 https://www.thegeekpub.com/16314/ads-b-using-a-raspberry-pi-flightradar24/
