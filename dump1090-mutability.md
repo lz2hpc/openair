@@ -87,3 +87,5 @@ http://localhost:80/dump1090/gmap.html
 #### Resources
 
 [https://forum.planefinder.net/threads/how-to-install-dump1090-mutability_1-15-dev-on-rpi.889/](https://forum.planefinder.net/threads/how-to-install-dump1090-mutability_1-15-dev-on-rpi.889/)
+
+[https://forum.flightradar24.com/threads/10232-How-to-Install-dump1090-mutability_1-15-dev-on-RPi](https://forum.flightradar24.com/threads/10232-How-to-Install-dump1090-mutability_1-15-dev-on-RPi)
