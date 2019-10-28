@@ -27,3 +27,7 @@ AJAX call failed (error: Not Found). Maybe dump1090 is no longer running? The di
 #### Resources
 
 [https://forum.flightradar24.com/threads/10232-How-to-Install-dump1090-mutability_1-15-dev-on-RPi](https://forum.flightradar24.com/threads/10232-How-to-Install-dump1090-mutability_1-15-dev-on-RPi)
+
+[http://http.us.debian.org/debian/pool/main/d/dump1090-mutability/dump1090-mutability_1.15~20180310.4a16df3+dfsg-6_armhf.deb ](http://http.us.debian.org/debian/pool/main/d/dump1090-mutability/dump1090-mutability_1.15~20180310.4a16df3+dfsg-6_armhf.deb)
+
+[https://manpages.debian.org/buster/dump1090-mutability/dump1090-mutability.1.en.html](https://manpages.debian.org/buster/dump1090-mutability/dump1090-mutability.1.en.html)
