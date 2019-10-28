@@ -8,23 +8,6 @@
 
 Use UDP protocol, as for TCP the OpenVpn doesn't run out of the box.
 
-
-#### Client
-
-``$ sudo apt-get install openvpn -y``
-
-``$ openvpn –-version``
-
-From the Public server get the ``client.conf / client.ovpn`` file and (i.e.: /root/client.ovpn)
-
-put it on the clien's location ``/etc/openvpn/client.ovpn``.
-
-Copy client's certificate and key too.
-
-Initialize the client with the config file.
-
-``$ openvpn ./client.ovpn``
-
 #### Start / Stop
 
 ``$ sudo systemctl stop openvpn@server``
@@ -44,6 +27,23 @@ Add ``AUTOSTART="all"`` to ``/etc/default/openvpn``
 ``$ sudo systemctl daemon-reload``
 
 ``sudo service openvpn restart``
+
+#### Client
+
+``$ sudo apt-get install openvpn -y``
+
+``$ openvpn –-version``
+
+From the Public server get the ``client.conf / client.ovpn`` file and (i.e.: /root/client.ovpn)
+
+put it on the clien's location ``/etc/openvpn/client.ovpn``.
+
+Copy client's certificate and key too.
+
+Run the client with the config file.
+
+``$ openvpn /etc/openvpn/client.ovpn``
+
 
 ### VPS Bastioning
 
