@@ -20,17 +20,17 @@ Use UDP protocol, as for TCP the OpenVpn doesn't run out of the box.
 
 #### Boot
 
-``$ mv /etc/openvpn/client.ovpn /etc/openvpn/client.conf``
+``$ cp /etc/openvpn/client.ovpn /etc/openvpn/client.conf``
 
 Add ``AUTOSTART="all"`` to ``/etc/default/openvpn``
 
-``$ sudo systemctl daemon-reload``
+``$ systemctl daemon-reload``
 
-``sudo service openvpn restart``
+``$ service openvpn restart``
 
 #### Client
 
-``$ sudo apt-get install openvpn -y``
+``$ apt-get install openvpn -y``
 
 ``$ openvpn –-version``
 
