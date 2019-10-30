@@ -5,9 +5,7 @@ Here are some examples:
 
 #### Third Parties
 
-##### pitunnel.com
-
-##### dataplicity.com
+pitunnel.com or dataplicity.com
 
 #### Own Grownn
 
