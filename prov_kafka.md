@@ -1,5 +1,13 @@
 #### Install
 
+Install the prerequisites:
+
+``$ sudo apt install openjdk-8-jre-headless``
+
+``java -version``
+
+Install the Message Broker:
+
 ``$ sudo useradd kafka -m``
 
 ``$ sudo passwd kafka``
@@ -87,5 +95,7 @@ https://github.com/tchiotludo/kafkahq
 https://www.conduktor.io/download $$$
 
 #### Resources
+
+https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04
 
 https://www.digitalocean.com/community/tutorials/how-to-install-apache-kafka-on-ubuntu-18-04
