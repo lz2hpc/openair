@@ -65,7 +65,6 @@ WantedBy=multi-user.target
 ```
 
 #### Status / Start / Stop / Restart
-sudo systemctl start kafka
 
 ``$ sudo systemctl status kafka``
 
