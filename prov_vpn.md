@@ -102,3 +102,5 @@ Firewall Service
 [https://www.itsfullofstars.de/2018/09/openvpn-assign-static-ip-to-client/](https://www.itsfullofstars.de/2018/09/openvpn-assign-static-ip-to-client/)
 
 [https://openvpn.net/community-resources/configuring-client-specific-rules-and-access-policies/](https://openvpn.net/community-resources/configuring-client-specific-rules-and-access-policies/)
+
+[https://itblogsec.com/build-own-openvpn-server-by-using-raspberry-pi-12/](https://itblogsec.com/build-own-openvpn-server-by-using-raspberry-pi-12/)
