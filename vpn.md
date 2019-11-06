@@ -24,13 +24,13 @@ Use UDP protocol, as for TCP the OpenVpn doesn't run out of the box.
 
 Add ``AUTOSTART="all"`` to ``/etc/default/openvpn``
 
-``$ systemctl daemon-reload``
+``$ sudo systemctl daemon-reload``
 
-``$ service openvpn restart``
+``$ sudo service openvpn restart``
 
 #### Client
 
-``$ apt-get install openvpn -y``
+``$ sudo apt-get install openvpn -y``
 
 ``$ openvpn –-version``
 
