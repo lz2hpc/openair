@@ -44,6 +44,12 @@ Run the client with the config file.
 
 ``$ openvpn /etc/openvpn/client.ovpn``
 
+#### Statistics
+
+Check logged clients:
+
+``sudo cat /var/log/openvpn.log | grep "Peer Connection"``
+
 
 ### VPS Bastioning
 
@@ -94,3 +100,5 @@ Firewall Service
 [OpenVPN client on Raspberry Pi](http://kernelreloaded.com/openvpn-client-on-raspberry-pi/)
 
 [https://www.itsfullofstars.de/2018/09/openvpn-assign-static-ip-to-client/](https://www.itsfullofstars.de/2018/09/openvpn-assign-static-ip-to-client/)
+
+[https://openvpn.net/community-resources/configuring-client-specific-rules-and-access-policies/](https://openvpn.net/community-resources/configuring-client-specific-rules-and-access-policies/)
