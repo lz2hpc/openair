@@ -78,6 +78,8 @@ WantedBy=multi-user.target
 
 ``$ sudo systemctl start kafka``
 
+``$ sudo systemctl enable kafka``
+
 ``$ sudo systemctl stop kafka``
 
 ``$ sudo systemctl restart kafka``
