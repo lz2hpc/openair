@@ -83,6 +83,8 @@ Firewall Service
 
 #### Resources
 
+[https://openvpn.net/vpn-server-resources/how-to-connect-to-access-server-from-a-linux-computer/](https://openvpn.net/vpn-server-resources/how-to-connect-to-access-server-from-a-linux-computer/)
+
 [https://openvpn.net/community-resources/how-to/](https://openvpn.net/community-resources/how-to/)
 
 [Guide: Configure OpenVPN to autostart on systemd Linux](https://www.smarthomebeginner.com/configure-openvpn-to-autostart-linux/)
