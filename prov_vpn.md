@@ -92,3 +92,5 @@ Firewall Service
 [Guide to install OpenVPN for Ubuntu](https://www.ovpn.com/en/guides/ubuntu-gui)
 
 [OpenVPN client on Raspberry Pi](http://kernelreloaded.com/openvpn-client-on-raspberry-pi/)
+
+[https://www.itsfullofstars.de/2018/09/openvpn-assign-static-ip-to-client/](https://www.itsfullofstars.de/2018/09/openvpn-assign-static-ip-to-client/)
