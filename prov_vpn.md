@@ -38,7 +38,7 @@ From the Public server get the ``client.conf / client.ovpn`` file and (i.e.: /ro
 
 put it on the clien's location ``/etc/openvpn/client.ovpn``.
 
-Copy client's certificate and key too.
+Copy client's certificates and key to /etc/openvpn/ directory on your Raspberry Pi
 
 Run the client with the config file.
 
@@ -83,9 +83,10 @@ Firewall Service
 
 #### Resources
 
-[https://www.cyberciti.biz/faq/howto-setup-openvpn-server-on-ubuntu-linux-14-04-or-16-04-lts/](https://www.cyberciti.biz/faq/howto-setup-openvpn-server-on-ubuntu-linux-14-04-or-16-04-lts/)
+[https://openvpn.net/community-resources/how-to/](https://openvpn.net/community-resources/how-to/)
 
 [Guide: Configure OpenVPN to autostart on systemd Linux](https://www.smarthomebeginner.com/configure-openvpn-to-autostart-linux/)
 
 [Guide to install OpenVPN for Ubuntu](https://www.ovpn.com/en/guides/ubuntu-gui)
+
 [OpenVPN client on Raspberry Pi](http://kernelreloaded.com/openvpn-client-on-raspberry-pi/)
