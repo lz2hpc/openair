@@ -2,6 +2,13 @@
 
 ``wget -P ~/ https://github.com/OpenVPN/easy-rsa/releases/download/v3.0.6/EasyRSA-unix-v3.0.6.tgz``
 
+#### Configure the EasyRSA
+
+#### Creating the Server Certificate, Key, and Encryption Files
+
+``$ cd /etc/openvpn/easy-rsa/EasyRSA-v3.0.6``
+
+``$ ./easyrsa init-pki``
 
 ``
 
