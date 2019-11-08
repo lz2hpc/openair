@@ -90,6 +90,29 @@ With the last step, ll the certificate and key files needed by your server have 
 
 #### Generating a Client Certificate and Key Pair
 
+``$ mkdir -p ~/client-configs/keys``
+
+``$ ./easyrsa gen-req pi-mb-01 nopass``
+
+Keypair and certificate request completed. Your files are:
+
+req: /etc/openvpn/easy-rsa/EasyRSA-v3.0.6/pki/reqs/pi-mb-01.req
+
+key: /etc/openvpn/easy-rsa/EasyRSA-v3.0.6/pki/private/pi-mb-01.key
+
+``$ cp pki/private/pi-mb-01.key ~/client-configs/keys/``
+
+``$ cp pki/reqs/pi-mb-01.req /tmp``
+
+``$ ./easyrsa import-req /tmp/pi-mb-01.req pi-mb-01.req``
+
+The request has been successfully imported with a short name of: pi-mb-01.req
+
+You may now use this name to perform signing operations on this request.
+
+``$ /easyrsa sign-req client pi-mb-01``
+
+Certificate created at: /etc/openvpn/easy-rsa/EasyRSA-v3.0.6/pki/issued/pi-mb-01.crt
 
 #### Resources
 
