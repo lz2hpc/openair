@@ -30,6 +30,39 @@ sudo cp /etc/openvpn/easy-rsa/EasyRSA-v3.0.6/pki/reqs/penguin_vpn_01.req /etc/op
 ./easyrsa import-req /etc/openvpn/penguin_vpn_01.req server_01 -> /etc/openvpn/easy-rsa/EasyRSA-v3.0.6/pki/reqs/server_01.req
 
 
+./easyrsa sign-req server server_01
+
+Note: using Easy-RSA configuration from: ./vars
+
+Using SSL: openssl OpenSSL 1.1.1b  26 Feb 2019
+
+
+You are about to sign the following certificate.
+Please check over the details shown below for accuracy. Note that this request
+has not been cryptographically verified. Please be sure it came from a trusted
+source or that you have verified the request checksum with the sender.
+
+Request subject, to be signed as a server certificate for 1080 days:
+
+subject=
+    commonName                = penguin_vpn_01
+
+
+Type the word 'yes' to continue, or any other input to abort.
+  Confirm request details: yes
+Using configuration from /etc/openvpn/easy-rsa/EasyRSA-v3.0.6/pki/safessl-easyrsa.cnf
+Enter pass phrase for /etc/openvpn/easy-rsa/EasyRSA-v3.0.6/pki/private/ca.key:
+Check that the request matches the signature
+Signature ok
+The Subject's Distinguished Name is as follows
+commonName            :ASN.1 12:'penguin_vpn_01'
+Certificate is to be certified until Oct 23 09:44:07 2022 GMT (1080 days)
+
+Write out database with 1 new entries
+Data Base Updated
+
+Certificate created at: /etc/openvpn/easy-rsa/EasyRSA-v3.0.6/pki/issued/server_01.crt
+
 
 ``
 
