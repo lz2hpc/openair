@@ -1,8 +1,8 @@
-#### Install
+#### Installing the Easy-RSA scripts
 
 ``wget -P ~/ https://github.com/OpenVPN/easy-rsa/releases/download/v3.0.6/EasyRSA-unix-v3.0.6.tgz``
 
-#### Configure the EasyRSA
+#### Configuring the EasyRSA
 
 #### Creating the Server Certificate, Key, and Encryption Files
 
@@ -113,6 +113,19 @@ You may now use this name to perform signing operations on this request.
 ``$ /easyrsa sign-req client pi-mb-01``
 
 Certificate created at: /etc/openvpn/easy-rsa/EasyRSA-v3.0.6/pki/issued/pi-mb-01.crt
+
+``$ cp pki/issued/pi-mb-01.crt /tmp``
+
+``$ cp /tmp/pi-mb-01.crt ~/client-configs/keys/``
+
+``$ sudo cp ta.key ~/client-configs/keys/``
+
+``$ sudo cp /etc/openvpn/ca.crt ~/client-configs/keys/``
+
+#### Configuring the OpenVPN Service
+
+
+
 
 #### Resources
 
