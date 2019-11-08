@@ -25,7 +25,9 @@ Keypair and certificate request completed. Your files are:
 req: /etc/openvpn/easy-rsa/EasyRSA-v3.0.6/pki/reqs/penguin_vpn_01.req
 key: /etc/openvpn/easy-rsa/EasyRSA-v3.0.6/pki/private/penguin_vpn_01.key
 
+
 sudo cp /etc/openvpn/easy-rsa/EasyRSA-v3.0.6/pki/reqs/penguin_vpn_01.req /etc/openvpn
+
 
 ./easyrsa import-req /etc/openvpn/penguin_vpn_01.req server_01 -> /etc/openvpn/easy-rsa/EasyRSA-v3.0.6/pki/reqs/server_01.req
 
@@ -64,7 +66,23 @@ Data Base Updated
 Certificate created at: /etc/openvpn/easy-rsa/EasyRSA-v3.0.6/pki/issued/server_01.crt
 
 
+./easyrsa gen-dh -> /etc/openvpn/easy-rsa/EasyRSA-v3.0.6/pki/dh.pem
+
+
+sudo openvpn --genkey --secret ta.key
+
+
+sudo cp /etc/openvpn/easy-rsa/EasyRSA-v3.0.6/ta.key /etc/openvpn/
+
+sudo cp /etc/openvpn/easy-rsa/EasyRSA-v3.0.6/pki/dh.pem /etc/openvpn/
+
+
+With the last step, ll the certificate and key files needed by your server have been generated.
+
+
 ``
+
+#### Generating a Client Certificate and Key Pair
 
 
 #### Resources
