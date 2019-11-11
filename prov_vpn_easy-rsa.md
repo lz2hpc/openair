@@ -23,9 +23,8 @@ root@221303:/etc/openvpn/easy-rsa/EasyRSA-v3.0.6# ./easyrsa gen-req penguin_vpn_
 Note: using Easy-RSA configuration from: ./vars
 
 Using SSL: openssl OpenSSL 1.1.1b  26 Feb 2019
-Generating a RSA private key
-...............................................
------
+Generating a RSA private key ...
+
 Common Name (eg: your user, host, or server name) [penguin_vpn_01]:
 
 Keypair and certificate request completed. Your files are:
@@ -39,7 +38,7 @@ key: /etc/openvpn/easy-rsa/EasyRSA-v3.0.6/pki/private/penguin_vpn_01.key
 ``$ ./easyrsa import-req /etc/openvpn/penguin_vpn_01.req server_01 -> /etc/openvpn/easy-rsa/EasyRSA-v3.0.6/pki/reqs/server_01.req``
 
 
-``$ ./easyrsa sign-req server server_01``
+``$ ./easyrsa sign-req server server_01`` -> > /etc/openvpn/easy-rsa/EasyRSA-v3.0.6/pki/issued/server_01.crt
 
 Note: using Easy-RSA configuration from: ./vars
 
@@ -124,9 +123,31 @@ Certificate created at: /etc/openvpn/easy-rsa/EasyRSA-v3.0.6/pki/issued/pi-mb-01
 
 #### Configuring the OpenVPN Service
 
+``tls-auth ta.key 0 # This file is secret``
 
+``cipher AES-256-CBC``
 
+``auth SHA256``
 
+``dh dh.pem``
+
+``user nobody``
+
+``group nogroup``
+
+Point to Non-Default Credentials
+
+``cert server_01.crt``
+
+``key server_01.key``
+
+#### Adjusting the Server Networking Configuration
+
+``sudo nano /etc/sysctl.conf``
+
+and uncomment
+
+``net.ipv4.ip_forward=1``
 #### Resources
 
 [Easy-RSA Releases](https://github.com/OpenVPN/easy-rsa/releases)
