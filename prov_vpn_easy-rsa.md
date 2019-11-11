@@ -143,11 +143,20 @@ Point to Non-Default Credentials
 
 #### Adjusting the Server Networking Configuration
 
-``sudo nano /etc/sysctl.conf``
+``$ sudo nano /etc/sysctl.conf``
 
 and uncomment
 
 ``net.ipv4.ip_forward=1``
+
+#### Creating the Client Configuration Infrastructure
+
+``$ mkdir -p ~/client-configs/files``
+
+``$ cp /usr/share/doc/openvpn/examples/sample-config-files/client.conf ~/client-configs/base.conf``
+
+``$ nano ~/client-configs/base.conf``
+
 #### Resources
 
 [Easy-RSA Releases](https://github.com/OpenVPN/easy-rsa/releases)
