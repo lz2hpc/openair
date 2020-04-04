@@ -1,21 +1,21 @@
-#### NOAA
+### NOAA
 
-NOAA 15	137.6200 MHz
+**NOAA 15**	137.6200 MHz
 
-NOAA 18	137.9125 MHz
+**NOAA 18**	137.9125 MHz
 
-NOAA 19	137.1000 MHz
+**NOAA 19**	137.1000 MHz
 
-#### Meteor
+### Meteor
 
-M2 137.100/137.900
+**M2** 137.100/137.900
 
-M2 2 137.100/137.900
+**M2 2** 137.100/137.900
 
 
-#### Constant Signals for Reference
+### Constant Signals for Reference
 
-112.650 for Sofia VOR
+**Sofia VOR** 112.650
 
-117.500 for Bailovo
+**Bailovo VOR** 117.500
 
