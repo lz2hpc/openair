@@ -10,8 +10,10 @@ NOAA 19	137.1000 MHz
 
 M2 137.100/137.900
 
+M2 2 137.100/137.900
 
-#### Constant signals for reference
+
+#### Constant Signals for Reference
 
 112.650 for Sofia VOR
 
