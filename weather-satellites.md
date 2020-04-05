@@ -4,13 +4,14 @@
 
 **NOAA 18**	137.9125 MHz
 
-**NOAA 19**	137.1000 MHz
+**NOAA 19**	137.1000 
 
-### Meteor
 
-**M2** 137.100/137.900
+### METEOR
 
-**M2 2** 137.100/137.900
+**METEOR M2** 137.100/137.900
+
+**METEOR M2 2** 137.100/137.900
 
 
 ### Constant Signals for Reference
