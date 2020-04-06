@@ -15,6 +15,12 @@
 
 **METEOR M2 2** 137.100/137.900
 
+
+## HAM
+
+**FO-29**  435.8000 – 435.9000 MHz SSB/CW
+
+
 ## Tuning
 
 ### Constant Signals for Reference
@@ -22,6 +28,7 @@
 **Sofia VOR** 112.650
 
 **Bailovo VOR** 117.500
+
 
 ## Resources
 
