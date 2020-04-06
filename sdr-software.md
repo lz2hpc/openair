@@ -7,3 +7,8 @@
 [CubicSDR](https://github.com/cjcliffe/CubicSDR/releases) (Lin/Win)
 
 [GQRX](https://gqrx.dk/download) (Lin/Win)
+
+
+### Resources
+
+[RTL-SDR Software](https://www.rtl-sdr.com/big-list-rtl-sdr-supported-software/)
