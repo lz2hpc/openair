@@ -18,7 +18,7 @@ CA creation complete and you may now import and sign cert requests.
 Your new CA certificate file for publishing is at:
 /etc/openvpn/easy-rsa/EasyRSA-v3.0.6/pki/ca.crt
 
-root@221303:/etc/openvpn/easy-rsa/EasyRSA-v3.0.6# ./easyrsa gen-req penguin_vpn_01
+root@221303:/etc/openvpn/easy-rsa/EasyRSA-v3.0.6# ``./easyrsa gen-req penguin_vpn_01``
 
 Note: using Easy-RSA configuration from: ./vars
 
