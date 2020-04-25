@@ -54,7 +54,18 @@ Install the drivers: ``` apt-get install rtl-sdr```.
 
 Check if the device is visible and we can use it: ```rtl_test```.
 
-And even with some SDR receiving software like GQRX: ```apt-get install gqrx-sdr```.
+And even with some SDR receiving software like GQRX: 
+
+```
+apt-get install pulseaudio
+
+pulseaudio -D
+
+apt-get install gqrx-sdr
+
+gqrx-sdr
+
+```
 
 
 
