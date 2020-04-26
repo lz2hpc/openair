@@ -1,13 +1,25 @@
-## ADS-B receiving with Docker
+## ADS-B Reception with RTL_SDR dongle and Docker
+
+Instead of installing the decoder and a vizualization software natively, 
+
+we may do this using docker engine and run them in docker containers.
 
 ### Install and configure the Docker
 
-Download and a script and install the *docker* and the *docker-copmpose*:
+#### Install Docker
+
+Download a script and install the *docker* and the *docker-copmpose*:
 
 ```
 curl -fsSL https://get.docker.com -o get-docker.sh
+
 sh get-docker.sh
+
+docker-compose --version
+
 ```
+
+In case some errors (like version failed) occurs perform next extra steps:
 
 ```
 sudo pip uninstall docker docker-compose
@@ -20,7 +32,9 @@ sudo apt-get install docker docker-compose
 
 ```
 
-Add docker log rotation, as the logs may grow.
+#### Configure Docker
+
+Add docker log rotation, as the logs and amount of data ```/var/lib/docker/containers``` in will grow.
 
 Edit the daemon config ```/etc/docker/daemon.json```
 
@@ -38,6 +52,8 @@ Edit the daemon config ```/etc/docker/daemon.json```
 Restart the docker daeomon ```systemctl restart docker```
 
 ### Install RTL-SDR drivers
+
+For ADS-B reception we will use cheap RTL_SDR dongle.
 
 First we need to blacklist the default drivers. To do this, 
 
@@ -67,11 +83,9 @@ gqrx-sdr
 
 ```
 
-### Install Docker
-
 ### Readsb Decoder and tar1090 Images
 
-/opt/adsb/docker-compose.yml:
+Create ```/opt/adsb/docker-compose.yml``` and edit it with next configuration data
 
 ```
 version: '2.0'
@@ -134,6 +148,8 @@ Here we have next custom lines:
 Where 001, 003 are numbers taken from libusb execution. 
 
 - TZ=[Europe/Sofia](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
+
+Now we are aible to see the flying planes around us on http://ourhost:8078
 
 ### Arrange Feeders
 
