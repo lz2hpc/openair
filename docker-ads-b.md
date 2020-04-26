@@ -67,7 +67,61 @@ gqrx-sdr
 
 ```
 
+### Install Docker
 
+### Get and run images
+
+/opt/adsb/docker-compose.yml:
+
+```
+version: '2.0'
+
+networks:
+  adsbnet:
+
+services:
+
+  readsb:
+    image: mikenye/readsb:latest
+    tty: true
+    container_name: readsb
+    restart: always
+    devices:
+      - /dev/bus/usb/001/003:/dev/bus/usb/001/003
+    ports:
+      - 8080:80
+      - 30005:30005
+    networks:
+      - adsbnet
+    command:
+      - --dcfilter
+      - --device-type=rtlsdr
+      - --fix
+      - --forward-mlat
+      - --json-location-accuracy=2
+      - --lat=42.61541
+      - --lon=23.33497
+      - --mlat
+      - --modeac
+      - --ppm=0
+      - --net
+      - --stats-every=3600
+      - --quiet
+      - --write-json=/var/run/readsb
+
+  tar1090:
+    image: mikenye/tar1090:latest
+    tty: true
+    container_name: tar1090
+    restart: always
+    environment:
+      - TZ=Europe/Sofia
+      - BEASTHOST=readsb
+    networks:
+      - adsbnet
+    ports:
+      - 8078:80
+```
 
 
 #### Resources
