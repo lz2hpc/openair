@@ -156,7 +156,7 @@ Now we are aible to see the flying planes around us on http://ourhost:8078
 [adsbexchange.com, FlightAware, FlightRadar24, AirNav RadarBox, PlaneFinder](https://github.com/mikenye/docker-readsb/wiki/Guide-to-ADS-B-Data-Receiving,-Decoding-and-Sharing,-Leveraging-RTLSDR-and-Docker)
 
 
-#### Resources
+### Resources
 
 [ADS-B receiving with Docker](https://github.com/mikenye/docker-readsb/wiki/Guide-to-ADS-B-Data-Receiving,-Decoding-and-Sharing,-Leveraging-RTLSDR-and-Docker)
 
