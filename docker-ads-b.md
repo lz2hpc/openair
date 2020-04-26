@@ -69,7 +69,7 @@ gqrx-sdr
 
 ### Install Docker
 
-### Get and run images
+### Readsb Decoder and tar1090 Images
 
 /opt/adsb/docker-compose.yml:
 
@@ -123,6 +123,22 @@ services:
       - 8078:80
 ```
 
+Here we have next custom lines:
+
+- /dev/bus/usb/BUSNUMBER/DEVICENUMBER
+    
+    BUSNUMBER=001
+    
+    DEVICENUMBER=003
+
+Where 001, 003 are numbers taken from libusb execution. 
+
+- TZ=[Europe/Sofia](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
+
+### Arrange Feeders
+
+[adsbexchange.com, FlightAware, FlightRadar24, AirNav RadarBox, PlaneFinder](https://github.com/mikenye/docker-readsb/wiki/Guide-to-ADS-B-Data-Receiving,-Decoding-and-Sharing,-Leveraging-RTLSDR-and-Docker)
+
 
 #### Resources
 
@@ -130,6 +146,8 @@ services:
 
 [docker-compose version problem](https://github.com/docker/docker-py/issues/1502)
 
-[docker log rotation](https://success.docker.com/article/how-to-setup-log-rotation-post-installation)
+[Docker log rotation](https://success.docker.com/article/how-to-setup-log-rotation-post-installation)
 
 [Nooelec SDR on Linux](https://www.nooelec.com/store/downloads/dl/file/id/72/product/0/nesdr_installation_manual_for_ubuntu.pdf)
+
+[Time Zone Names](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
