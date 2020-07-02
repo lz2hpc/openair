@@ -50,6 +50,9 @@ Check logged clients:
 
 ``sudo cat /var/log/openvpn.log | grep "Peer Connection"``
 
+#### Logs
+
+sudo tail -f /var/log/syslog
 
 ### VPS Bastioning
 
