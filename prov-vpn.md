@@ -24,7 +24,7 @@ Use UDP protocol, as for TCP the OpenVpn doesn't run out of the box.
 
 or from 
 
-``$ cp /etc/openvpn/client.ovpn /etc/openvpn/client.conf``
+``$ cp /etc/openvpn/client.ovpn /etc/openvpn/client/client.conf``
 
 Add ``AUTOSTART="all"`` to ``/etc/default/openvpn``
 
