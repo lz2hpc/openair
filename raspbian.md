@@ -19,3 +19,7 @@
 ``systemctl is-enabled ssh``
 
 ``systemctl status ssh``
+
+#### Get IP
+
+``hostname -I``
