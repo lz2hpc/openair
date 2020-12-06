@@ -23,3 +23,7 @@
 #### Get IP
 
 ``hostname -I``
+
+#### Get Raspberry OS
+
+[https://www.raspberrypi.org/software/operating-systems/](https://www.raspberrypi.org/software/operating-systems/)
