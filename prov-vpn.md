@@ -2,21 +2,25 @@
 
 #### Server
 
-``$ wget https://git.io/vpn -O openvpn-install.sh``
+``public$ curl -O https://raw.githubusercontent.com/angristan/openvpn-install/master/openvpn-install.sh``
 
-``$ sudo bash openvpn-install.sh``
+``public$ chmod +x openvpn-install.sh``
+
+``public$ ./openvpn-install.sh``
+
+
 
 Use UDP protocol, as for TCP the OpenVpn doesn't run out of the box.
 
 #### Start / Stop
 
-``$ sudo systemctl stop openvpn@server``
+``public$ systemctl stop openvpn@server``
 
-``$ sudo systemctl start openvpn@server``
+``public$ systemctl start openvpn@server``
 
-``$ sudo systemctl restart openvpn@server``
+``public$ systemctl restart openvpn@server``
 
-``$ sudo systemctl status openvpn@server``
+``public$ systemctl status openvpn@server``
 
 #### Boot
 
@@ -28,9 +32,9 @@ or from
 
 Add ``AUTOSTART="all"`` to ``/etc/default/openvpn``
 
-``$ sudo systemctl daemon-reload``
+``public$ systemctl daemon-reload``
 
-``$ sudo service openvpn restart``
+``public$ service openvpn restart``
 
 #### Client
 
@@ -40,19 +44,37 @@ Add ``AUTOSTART="all"`` to ``/etc/default/openvpn``
 
 From the Public server get the ``client.conf / client.ovpn`` file and (i.e.: /root/client.ovpn)
 
-put it on the clien's location ``/etc/openvpn/client.ovpn``.
+``client01$ scp root@public_server:/root/client01.ovpn client01.ovpn``
+
+``some_password``
+
+``client01$ mv client01.ovpn /etc/openvpn/client01.ovpn``
+
+``client01$ cp /etc/openvpn/client01.ovpn /etc/openvpn/client.conf``
 
 Copy client's certificates and key to /etc/openvpn/ directory on your Raspberry Pi
 
-Run the client with the config file.
+Run the service. It will start the client with the config file.
 
-``$ openvpn /etc/openvpn/client.ovpn``
+``client01$ sudo systemctl enable openvpn@client.service``
+
+``client01$ sudo service openvpn@client start``
+
+#### Start / Stop
+
+``client01$ systemctl stop openvpn@client``
+
+``client01$ systemctl start openvpn@client``
+
+``client01$ systemctl restart openvpn@client``
+
+``client01$ systemctl status openvpn@client``
 
 #### Statistics
 
 Check logged clients:
 
-``sudo cat /var/log/openvpn.log | grep "Peer Connection"``
+``public$ cat /var/log/openvpn.log | grep "Peer Connection"``
 
 #### Logs
 
@@ -96,15 +118,13 @@ Firewall Service
 
 #### Resources
 
-[https://openvpn.net/vpn-server-resources/how-to-connect-to-access-server-from-a-linux-computer/](https://openvpn.net/vpn-server-resources/how-to-connect-to-access-server-from-a-linux-computer/)
+[https://github.com/angristan/openvpn-install](https://github.com/angristan/openvpn-install)
 
 [https://openvpn.net/community-resources/how-to/](https://openvpn.net/community-resources/how-to/)
 
 [Guide: Configure OpenVPN to autostart on systemd Linux](https://www.smarthomebeginner.com/configure-openvpn-to-autostart-linux/)
 
 [Guide to install OpenVPN for Ubuntu](https://www.ovpn.com/en/guides/ubuntu-gui)
-
-[OpenVPN client on Raspberry Pi](http://kernelreloaded.com/openvpn-client-on-raspberry-pi/)
 
 [https://www.itsfullofstars.de/2018/09/openvpn-assign-static-ip-to-client/](https://www.itsfullofstars.de/2018/09/openvpn-assign-static-ip-to-client/)
 
