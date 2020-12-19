@@ -46,3 +46,9 @@ After a restart Wifi will be Up and running.
 [https://linuxhint.com/rasperberry_pi_wifi_wpa_supplicant/](https://linuxhint.com/rasperberry_pi_wifi_wpa_supplicant/)
 
 [https://community.octoprint.org/t/solved-raspberry-pi-2b-wifi-issues-with-buster-and-octopi/16960](https://community.octoprint.org/t/solved-raspberry-pi-2b-wifi-issues-with-buster-and-octopi/16960)
+
+[https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#3-wifi-or-ethernet](https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#3-wifi-or-ethernet)
+
+[https://tttapa.github.io/Pages/Raspberry-Pi/Installation+Setup/WiFi-Setup.html](https://tttapa.github.io/Pages/Raspberry-Pi/Installation+Setup/WiFi-Setup.html)
+
+[https://askubuntu.com/questions/1291424/failed-to-start-netplan-wpa-wlan0-sevice-unit-netplan-wpa-wlan0-service-not-fou](https://askubuntu.com/questions/1291424/failed-to-start-netplan-wpa-wlan0-sevice-unit-netplan-wpa-wlan0-service-not-fou)
